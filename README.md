@@ -28,10 +28,20 @@ Import:
 
 ```js
 // ESM
-import {} from "func-compose";
+import { compose } from "func-compose";
 
 // CommonJS
-const {} = require("func-compose");
+const { compose } = require("func-compose");
+
+function addOne(x) {
+  return x + 1;
+}
+
+function multiplyByTwo(x) {
+  return x * 2;
+}
+
+const result = compose(addOne, multiplyByTwo)(2); // 5
 ```
 
 ## Development
