@@ -7,7 +7,7 @@
 [![License][license-src]][license-href]
 [![JSDocs][jsdocs-src]][jsdocs-href]
 
-This is my package description.
+Compose a new function from smaller functions `f(g(x))`
 
 ## Usage
 
