@@ -29,6 +29,7 @@ describe("func-compose", () => {
   });
 
   it("should throw error if no functions are passed", () => {
+    // @ts-ignore
     expect(() => compose()).toThrow(
       "Must have at least one function as argument"
     );
