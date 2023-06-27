@@ -29,7 +29,7 @@ describe("func-compose", () => {
   });
 
   it("should throw error if no functions are passed", () => {
-    expect(() => compose()).toThrow("Must be at least one function");
+    expect(() => compose()).toThrow("Must have at least one function");
   });
 
   it("should ignore non-functions", () => {
@@ -37,10 +37,40 @@ describe("func-compose", () => {
     const func2 = vi.fn((x) => x + 2);
     const func3 = vi.fn((x) => x + 3);
 
-    const composed = compose(func1, func2, func3, 1, 2, 3);
+    const composed = compose(
+      func1,
+      func2,
+      func3,
+      // @ts-ignore
+      "1",
+      2,
+      false,
+      undefined,
+      {},
+      []
+    );
 
     const result = composed(2);
 
     expect(result).toBe(8);
+  });
+
+  it("compose handles this correctly", () => {
+    const obj = {
+      value: "Hello, world!",
+      fn1: function () {
+        return this.value;
+      },
+      fn2: function (value: string) {
+        return value.toUpperCase();
+      },
+    };
+
+    const composed = compose(obj.fn2, obj.fn1);
+
+    // When called as a method on obj, composed should return obj.value.toUpperCase()
+    const result = composed.call(obj);
+
+    expect(result).toBe("HELLO, WORLD!");
   });
 });

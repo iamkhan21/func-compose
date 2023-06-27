@@ -41,7 +41,7 @@ function multiplyByTwo(x) {
   return x * 2;
 }
 
-const result = compose(addOne, multiplyByTwo)(2); // 5
+const result = compose(addOne, multiplyByTwo)(2); // 2 * 2 + 1 = 5
 ```
 
 ## Development
