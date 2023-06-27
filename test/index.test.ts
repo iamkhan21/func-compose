@@ -29,7 +29,9 @@ describe("func-compose", () => {
   });
 
   it("should throw error if no functions are passed", () => {
-    expect(() => compose()).toThrow("Must have at least one function as argument");
+    expect(() => compose()).toThrow(
+      "Must have at least one function as argument"
+    );
   });
 
   it("should ignore non-functions", () => {
