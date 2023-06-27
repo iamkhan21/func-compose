@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/iamkhan21/func-compose/compare/v0.0.2...v0.0.3)
+
+
+### 🩹 Fixes
+
+  - **ci:** Fix formatting of GitHub actions for CI ([17d490d](https://github.com/iamkhan21/func-compose/commit/17d490d))
+
+### 💅 Refactors
+
+  - **compose, ci:** Improve error message, change branch for ci ([50b92c3](https://github.com/iamkhan21/func-compose/commit/50b92c3))
+
+### 🏡 Chore
+
+  - **ci:** Update GitHub actions for CI ([9e08d18](https://github.com/iamkhan21/func-compose/commit/9e08d18))
+  - **package.json:** Add description ([5148bbd](https://github.com/iamkhan21/func-compose/commit/5148bbd))
+  - Fix formatting in test file ([9575c29](https://github.com/iamkhan21/func-compose/commit/9575c29))
+
+### ✅ Tests
+
+  - Update test due to new error message ([bf11891](https://github.com/iamkhan21/func-compose/commit/bf11891))
+
+### ❤️  Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v0.0.2
 
 [compare changes](https://github.com/iamkhan21/func-compose/compare/v0.0.1...v0.0.2)
