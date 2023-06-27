@@ -1,7 +1,7 @@
 {
   "name": "func-compose",
   "version": "0.0.2",
-  "description": "",
+  "description": "Compose a new function from smaller functions `f(g(x))`",
   "repository": "https://github.com/iamkhan21/func-compose",
   "license": "MIT",
   "sideEffects": false,
