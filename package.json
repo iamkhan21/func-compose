@@ -37,5 +37,5 @@
     "unbuild": "2.0.0",
     "vitest": "2.1.5"
   },
-  "packageManager": "pnpm@latest"
+  "packageManager": "pnpm@9.6.4"
 }
